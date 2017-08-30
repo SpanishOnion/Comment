@@ -1,0 +1,288 @@
+*{
+    padding:0;
+    margin:0;
+}
+.main{
+    margin:300px auto;
+    width:990px;
+    font-family: "Microsoft YaHei";
+}
+::-webkit-input-placeholder{
+    color:#bfbfbf;
+}
+.CHeader{
+    width:100%;
+    height:196px;
+}
+.CPersonal::after{
+    content: ".";
+    display: block;
+    height: 0 ;
+    clear:both;
+    visibility: hidden;
+}
+.CPortrait{
+    width:50px;
+    height:50px;
+    position:relative;
+    float:left;
+    background:#eee;
+    border-radius:50%;
+    cursor:pointer;
+    -moz-user-select:none;
+}
+.UserPortrait{
+    display: none;
+    width:250px;
+    height:250px;
+    position:absolute;bottom:55px;left:-50px;
+    background-color:#fff;
+    box-shadow:0 0 10px #eee;
+    border-radius: 5px;
+}
+.PortImg{
+    position:absolute;
+    top:0;right:0;bottom:0;left:0;
+    width:38px;
+    height:31px;
+    margin:auto;
+}
+.PersonalInfo{
+    margin:10px 0 0 15px;
+    float:left;
+}
+.InfoContent{
+    width:200px;
+    height:30px;
+    margin-right:10px;
+    outline:none;
+    border:1px solid #e74851;
+    border-radius:10px;
+    text-indent:10px;
+    background: none;
+}
+.InfoContent:focus{
+    border:1px solid #45A0F6;
+}
+.CContent{
+    width:100%;
+    height:96px;
+    box-sizing:border-box;
+    padding:13px 10px 0;
+    float:left;
+    border:1px solid #e74851;
+    border-radius:10px;
+}
+.Ccontents{
+    width:100%;
+    height:80px;
+    resize:none;
+    border:0;
+    outline:none;
+    background: none;
+}
+.Csubmit{
+    width: 100px;
+    height: 30px;
+    position:relative;
+    background-color: #E74851;
+    float: right;
+    margin-top: 10px;
+    border-radius: 10px;
+    color: #FDF4F4;
+    font-size: 17px;
+    text-align: center;
+    line-height: 30px;
+    cursor: pointer;
+    -moz-user-select:none;
+    transition:.3s ease-out;
+}
+.Csubmit:hover{
+    background-color:#CF4149;
+}
+.Csubmit:hover .Ctriangle{
+    border-bottom: 8px solid #CF4149;
+}
+.Csubmit:active{
+    background-color:#eee;
+}
+.Csubmit:active .Ctriangle{
+    border-bottom: 8px solid #eee;
+}
+.Ctriangle{
+    width: 0;
+    height: 0;
+    position: absolute;
+    left: -7px;
+    top: 14px;
+    border: 8px dashed transparent;
+    border-bottom: 8px solid #E74851;
+    transition:.3s ease-out;
+}
+.CMTitle{
+    line-height: 30px;
+    height: 30px;
+    position: relative;
+    margin-top: 50px;
+    border-bottom:1px solid #e74851;
+}
+.MTContent{
+    float: left;
+    width: 66px;
+    height: 30px;
+    text-align: center;
+    color: #e74851;
+    font-size: 16px;
+    background-image: url(../images/title_bg.png);
+    border-bottom: 1px solid white;
+}
+.MTCount{
+    float:right;
+    color: #e74851;
+    font-size:14px;
+}
+.TCNumber{
+    font-size:20px;
+    margin: 0 5px;
+    font-family: Impact;
+}
+.MLTitle{
+    padding-top:18px;
+    color: #e74851;
+    font-size:16px;
+}
+.LTBg{
+    float: left;
+    width: 5px;
+    height: 18px;
+    margin-right: 13px;
+    background-image:url(../images/title_tag.png)
+}
+.LCSub{
+    padding: 13px 0 11px;
+    border-bottom: 1px dashed #e5e5e5;
+}
+.ContMsg{
+    padding-left:62px;
+}
+.UserInfo{
+    height:24px;
+    padding-top:1px;
+    line-height:16px;
+    font-size:12px;
+}
+.MsgTime{
+    float: right;
+    padding: 5px 0 0;
+    font-family: Arial;
+    color: silver;
+}
+.Nickname{
+    padding: 5px 7px 0 0;
+}
+.NnLink{
+    color: #e74851;
+    text-decoration:none;
+}
+.NnLink:hover{
+    text-decoration:underline;
+}
+.UserAdd{
+    color: #dbdbdb;
+    padding: 5px 7px 0 0;
+    cursor:default
+}
+.CommentInfo{
+    padding-top:12px;
+    line-height:22px;
+    font-size:14px;
+}
+.CommentBtn{
+    margin-top:11px;
+    color:#999;
+    font-size:12px;
+    overflow:hidden;
+    height:20px;
+}
+.CommentsBtn{
+    height:17px;
+    visibility: hidden;
+}
+.CBCai{
+    float:right;
+    cursor:pointer;
+}
+.CBCai:hover .iconCai{
+    background-image:url(../images/cai_active.png);
+}
+.CBCai:hover .CaiCount{
+    color: #e74851;
+}
+.CBDing{
+    float:right;
+    cursor:pointer;
+}
+.CBDing:hover .iconDing{
+    background-image:url(../images/ding_active.png);
+}
+.CBDing:hover .dingCount{
+    color: #e74851;
+}
+.iconDing{
+    float:right;
+    width: 16px;
+    height: 15px;
+    background-image:url(../images/ding.png);
+    margin-right:5px;
+}
+.iconCai{
+    float:right;
+    width: 16px;
+    height: 15px;
+    background-image:url(../images/cai.png);
+    margin-right:5px;
+}
+.dingCount{
+    float:right;
+    margin-right:20px;
+}
+.CaiCount{
+    float:right;
+    margin-right:20px;
+}
+.CBReply{
+    float:right;
+    margin-right:30px;
+    cursor:pointer;
+}
+.CBReply:hover{
+    color: #e74851;
+}
+.fatherReply{
+    margin: 9px 0 6px;
+}
+.FRMain{
+    background-color: #fff;
+    border: 1px solid #dee4e9;
+    padding:4px 4px 6px;
+}
+.FRMainHover{
+    background-color: #fef6f6;
+}
+.RMFloor{
+    padding:8px 10px 0;
+}
+.floorNum{
+    font-size: 14px;
+}
+.SbmTips{
+    width: 200px;
+    height: 30px;
+    float: right;
+    font-size: 16px;
+    color: #e74851;
+    text-align: right;
+    margin-top:10px;
+    line-height: 30px;
+    position:relative;
+}
